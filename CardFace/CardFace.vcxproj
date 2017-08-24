@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4C187566-73B2-3887-B5B0-BA76C085EC45}</ProjectGuid>
+    <RootNamespace>CardFace</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolSet>v120</PlatformToolSet>
+    <OutputDirectory>..\bin64\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>CardFace</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolSet>v120</PlatformToolSet>
+    <OutputDirectory>..\bin64\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>CardFaced</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\bin64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CardFace</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\bin64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CardFaced</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\facedata\inc;..\facedata\src;..\netdatamgr\inc;..\netdatamgr\src;..\hkcapsdk\inc;..\hkcapsdk\src;..\hksdkvc;..\public\include\hk;..\nelvspeaker\inc;..\nelvcarnotify;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtMultimedia;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtWidgets;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtGui;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtANGLE;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtSql;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtNetwork;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtCore;release;.;C:\Qt\Qt5.5.1\5.5\msvc2013_64\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:strictStrings -w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;QT_NO_DEBUG;QT_MULTIMEDIA_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SQL_LIB;QT_NETWORK_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\qtmain.lib;shell32.lib;C:/Qt/Qt5.5.1/5.5/msvc2013_64/lib\Qt5Core.lib;hkcapsdk.lib;facedata.lib;nelvcarnotify.lib;netdatamgr.lib;hksdkvc.lib;nelvspeaker.lib;dogauthority.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Multimedia.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Widgets.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Gui.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Sql.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Network.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib;C:/Qt/Qt5.5.1/5.5/msvc2013_64/lib;..\bin64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\CardFace.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;QT_NO_DEBUG;QT_MULTIMEDIA_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SQL_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\facedata\inc;..\facedata\src;..\netdatamgr\inc;..\netdatamgr\src;..\hkcapsdk\inc;..\hkcapsdk\src;..\hksdkvc;..\public\include\hk;..\nelvspeaker\inc;..\nelvcarnotify;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtMultimedia;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtWidgets;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtGui;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtANGLE;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtSql;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtNetwork;C:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtCore;debug;.;C:\Qt\Qt5.5.1\5.5\msvc2013_64\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;QT_MULTIMEDIA_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SQL_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\qtmaind.lib;shell32.lib;C:/Qt/Qt5.5.1/5.5/msvc2013_64/lib\Qt5Cored.lib;hkcapsdkd.lib;facedatad.lib;nelvcarnotifyd.lib;netdatamgrd.lib;hksdkvc.lib;nelvspeaker.lib;dogauthority.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Multimediad.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Widgetsd.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Guid.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Sqld.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Networkd.lib;C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib;C:/Qt/Qt5.5.1/5.5/msvc2013_64/lib;..\bin64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\CardFaced.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;QT_MULTIMEDIA_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SQL_LIB;QT_NETWORK_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="alldata.cpp" />
+    <ClCompile Include="infdialog.cpp" />
+    <ClCompile Include="logindialog.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="searchdialog.cpp" />
+    <ClCompile Include="setipdialog.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="alldata.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">alldata.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+if errorlevel 1 goto VCEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_MULTIMEDIA_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/mkspecs/win32-msvc2013 -IC:/Users/Administrator/Desktop/cardface2/CardFace -IC:/Users/Administrator/Desktop/cardface2/facedata/inc -IC:/Users/Administrator/Desktop/cardface2/facedata/src -IC:/Users/Administrator/Desktop/cardface2/netdatamgr/inc -IC:/Users/Administrator/Desktop/cardface2/netdatamgr/src -IC:/Users/Administrator/Desktop/cardface2/hkcapsdk/inc -IC:/Users/Administrator/Desktop/cardface2/hkcapsdk/src -IC:/Users/Administrator/Desktop/cardface2/hksdkvc -IC:/Users/Administrator/Desktop/cardface2/public/include/hk -IC:/Users/Administrator/Desktop/cardface2/nelvspeaker/inc -IC:/Users/Administrator/Desktop/cardface2/nelvcarnotify -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtMultimedia -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtGui -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtSql -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtCore alldata.h -o release\moc_alldata.cpp
+if errorlevel 1 goto VCEnd
+endlocal</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC alldata.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_alldata.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">alldata.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+if errorlevel 1 goto VCEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_MULTIMEDIA_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/mkspecs/win32-msvc2013 -IC:/Users/Administrator/Desktop/cardface2/CardFace -IC:/Users/Administrator/Desktop/cardface2/facedata/inc -IC:/Users/Administrator/Desktop/cardface2/facedata/src -IC:/Users/Administrator/Desktop/cardface2/netdatamgr/inc -IC:/Users/Administrator/Desktop/cardface2/netdatamgr/src -IC:/Users/Administrator/Desktop/cardface2/hkcapsdk/inc -IC:/Users/Administrator/Desktop/cardface2/hkcapsdk/src -IC:/Users/Administrator/Desktop/cardface2/hksdkvc -IC:/Users/Administrator/Desktop/cardface2/public/include/hk -IC:/Users/Administrator/Desktop/cardface2/nelvspeaker/inc -IC:/Users/Administrator/Desktop/cardface2/nelvcarnotify -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtMultimedia -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtGui -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtSql -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtCore alldata.h -o debug\moc_alldata.cpp
+if errorlevel 1 goto VCEnd
+endlocal</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC alldata.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_alldata.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="infdialog.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">infdialog.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+if errorlevel 1 goto VCEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_MULTIMEDIA_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/mkspecs/win32-msvc2013 -IC:/Users/Administrator/Desktop/cardface2/CardFace -IC:/Users/Administrator/Desktop/cardface2/facedata/inc -IC:/Users/Administrator/Desktop/cardface2/facedata/src -IC:/Users/Administrator/Desktop/cardface2/netdatamgr/inc -IC:/Users/Administrator/Desktop/cardface2/netdatamgr/src -IC:/Users/Administrator/Desktop/cardface2/hkcapsdk/inc -IC:/Users/Administrator/Desktop/cardface2/hkcapsdk/src -IC:/Users/Administrator/Desktop/cardface2/hksdkvc -IC:/Users/Administrator/Desktop/cardface2/public/include/hk -IC:/Users/Administrator/Desktop/cardface2/nelvspeaker/inc -IC:/Users/Administrator/Desktop/cardface2/nelvcarnotify -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtMultimedia -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtGui -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtSql -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtCore infdialog.h -o release\moc_infdialog.cpp
+if errorlevel 1 goto VCEnd
+endlocal</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC infdialog.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_infdialog.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">infdialog.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+if errorlevel 1 goto VCEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_MULTIMEDIA_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/mkspecs/win32-msvc2013 -IC:/Users/Administrator/Desktop/cardface2/CardFace -IC:/Users/Administrator/Desktop/cardface2/facedata/inc -IC:/Users/Administrator/Desktop/cardface2/facedata/src -IC:/Users/Administrator/Desktop/cardface2/netdatamgr/inc -IC:/Users/Administrator/Desktop/cardface2/netdatamgr/src -IC:/Users/Administrator/Desktop/cardface2/hkcapsdk/inc -IC:/Users/Administrator/Desktop/cardface2/hkcapsdk/src -IC:/Users/Administrator/Desktop/cardface2/hksdkvc -IC:/Users/Administrator/Desktop/cardface2/public/include/hk -IC:/Users/Administrator/Desktop/cardface2/nelvspeaker/inc -IC:/Users/Administrator/Desktop/cardface2/nelvcarnotify -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtMultimedia -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtGui -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtSql -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtCore infdialog.h -o debug\moc_infdialog.cpp
+if errorlevel 1 goto VCEnd
+endlocal</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC infdialog.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_infdialog.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="logindialog.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">logindialog.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+if errorlevel 1 goto VCEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_MULTIMEDIA_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/mkspecs/win32-msvc2013 -IC:/Users/Administrator/Desktop/cardface2/CardFace -IC:/Users/Administrator/Desktop/cardface2/facedata/inc -IC:/Users/Administrator/Desktop/cardface2/facedata/src -IC:/Users/Administrator/Desktop/cardface2/netdatamgr/inc -IC:/Users/Administrator/Desktop/cardface2/netdatamgr/src -IC:/Users/Administrator/Desktop/cardface2/hkcapsdk/inc -IC:/Users/Administrator/Desktop/cardface2/hkcapsdk/src -IC:/Users/Administrator/Desktop/cardface2/hksdkvc -IC:/Users/Administrator/Desktop/cardface2/public/include/hk -IC:/Users/Administrator/Desktop/cardface2/nelvspeaker/inc -IC:/Users/Administrator/Desktop/cardface2/nelvcarnotify -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtMultimedia -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtGui -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtSql -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtCore logindialog.h -o release\moc_logindialog.cpp
+if errorlevel 1 goto VCEnd
+endlocal</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC logindialog.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_logindialog.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">logindialog.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+if errorlevel 1 goto VCEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_MULTIMEDIA_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/mkspecs/win32-msvc2013 -IC:/Users/Administrator/Desktop/cardface2/CardFace -IC:/Users/Administrator/Desktop/cardface2/facedata/inc -IC:/Users/Administrator/Desktop/cardface2/facedata/src -IC:/Users/Administrator/Desktop/cardface2/netdatamgr/inc -IC:/Users/Administrator/Desktop/cardface2/netdatamgr/src -IC:/Users/Administrator/Desktop/cardface2/hkcapsdk/inc -IC:/Users/Administrator/Desktop/cardface2/hkcapsdk/src -IC:/Users/Administrator/Desktop/cardface2/hksdkvc -IC:/Users/Administrator/Desktop/cardface2/public/include/hk -IC:/Users/Administrator/Desktop/cardface2/nelvspeaker/inc -IC:/Users/Administrator/Desktop/cardface2/nelvcarnotify -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtMultimedia -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtGui -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtSql -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtCore logindialog.h -o debug\moc_logindialog.cpp
+if errorlevel 1 goto VCEnd
+endlocal</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC logindialog.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_logindialog.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mainwindow.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+if errorlevel 1 goto VCEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_MULTIMEDIA_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/mkspecs/win32-msvc2013 -IC:/Users/Administrator/Desktop/cardface2/CardFace -IC:/Users/Administrator/Desktop/cardface2/facedata/inc -IC:/Users/Administrator/Desktop/cardface2/facedata/src -IC:/Users/Administrator/Desktop/cardface2/netdatamgr/inc -IC:/Users/Administrator/Desktop/cardface2/netdatamgr/src -IC:/Users/Administrator/Desktop/cardface2/hkcapsdk/inc -IC:/Users/Administrator/Desktop/cardface2/hkcapsdk/src -IC:/Users/Administrator/Desktop/cardface2/hksdkvc -IC:/Users/Administrator/Desktop/cardface2/public/include/hk -IC:/Users/Administrator/Desktop/cardface2/nelvspeaker/inc -IC:/Users/Administrator/Desktop/cardface2/nelvcarnotify -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtMultimedia -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtGui -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtSql -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtCore mainwindow.h -o release\moc_mainwindow.cpp
+if errorlevel 1 goto VCEnd
+endlocal</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC mainwindow.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_mainwindow.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mainwindow.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+if errorlevel 1 goto VCEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_MULTIMEDIA_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/mkspecs/win32-msvc2013 -IC:/Users/Administrator/Desktop/cardface2/CardFace -IC:/Users/Administrator/Desktop/cardface2/facedata/inc -IC:/Users/Administrator/Desktop/cardface2/facedata/src -IC:/Users/Administrator/Desktop/cardface2/netdatamgr/inc -IC:/Users/Administrator/Desktop/cardface2/netdatamgr/src -IC:/Users/Administrator/Desktop/cardface2/hkcapsdk/inc -IC:/Users/Administrator/Desktop/cardface2/hkcapsdk/src -IC:/Users/Administrator/Desktop/cardface2/hksdkvc -IC:/Users/Administrator/Desktop/cardface2/public/include/hk -IC:/Users/Administrator/Desktop/cardface2/nelvspeaker/inc -IC:/Users/Administrator/Desktop/cardface2/nelvcarnotify -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtMultimedia -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtGui -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtSql -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtCore mainwindow.h -o debug\moc_mainwindow.cpp
+if errorlevel 1 goto VCEnd
+endlocal</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC mainwindow.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_mainwindow.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="searchdialog.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">searchdialog.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+if errorlevel 1 goto VCEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_MULTIMEDIA_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/mkspecs/win32-msvc2013 -IC:/Users/Administrator/Desktop/cardface2/CardFace -IC:/Users/Administrator/Desktop/cardface2/facedata/inc -IC:/Users/Administrator/Desktop/cardface2/facedata/src -IC:/Users/Administrator/Desktop/cardface2/netdatamgr/inc -IC:/Users/Administrator/Desktop/cardface2/netdatamgr/src -IC:/Users/Administrator/Desktop/cardface2/hkcapsdk/inc -IC:/Users/Administrator/Desktop/cardface2/hkcapsdk/src -IC:/Users/Administrator/Desktop/cardface2/hksdkvc -IC:/Users/Administrator/Desktop/cardface2/public/include/hk -IC:/Users/Administrator/Desktop/cardface2/nelvspeaker/inc -IC:/Users/Administrator/Desktop/cardface2/nelvcarnotify -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtMultimedia -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtGui -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtSql -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtCore searchdialog.h -o release\moc_searchdialog.cpp
+if errorlevel 1 goto VCEnd
+endlocal</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC searchdialog.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_searchdialog.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">searchdialog.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+if errorlevel 1 goto VCEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_MULTIMEDIA_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/mkspecs/win32-msvc2013 -IC:/Users/Administrator/Desktop/cardface2/CardFace -IC:/Users/Administrator/Desktop/cardface2/facedata/inc -IC:/Users/Administrator/Desktop/cardface2/facedata/src -IC:/Users/Administrator/Desktop/cardface2/netdatamgr/inc -IC:/Users/Administrator/Desktop/cardface2/netdatamgr/src -IC:/Users/Administrator/Desktop/cardface2/hkcapsdk/inc -IC:/Users/Administrator/Desktop/cardface2/hkcapsdk/src -IC:/Users/Administrator/Desktop/cardface2/hksdkvc -IC:/Users/Administrator/Desktop/cardface2/public/include/hk -IC:/Users/Administrator/Desktop/cardface2/nelvspeaker/inc -IC:/Users/Administrator/Desktop/cardface2/nelvcarnotify -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtMultimedia -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtGui -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtSql -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtCore searchdialog.h -o debug\moc_searchdialog.cpp
+if errorlevel 1 goto VCEnd
+endlocal</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC searchdialog.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_searchdialog.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="setipdialog.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setipdialog.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+if errorlevel 1 goto VCEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_MULTIMEDIA_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/mkspecs/win32-msvc2013 -IC:/Users/Administrator/Desktop/cardface2/CardFace -IC:/Users/Administrator/Desktop/cardface2/facedata/inc -IC:/Users/Administrator/Desktop/cardface2/facedata/src -IC:/Users/Administrator/Desktop/cardface2/netdatamgr/inc -IC:/Users/Administrator/Desktop/cardface2/netdatamgr/src -IC:/Users/Administrator/Desktop/cardface2/hkcapsdk/inc -IC:/Users/Administrator/Desktop/cardface2/hkcapsdk/src -IC:/Users/Administrator/Desktop/cardface2/hksdkvc -IC:/Users/Administrator/Desktop/cardface2/public/include/hk -IC:/Users/Administrator/Desktop/cardface2/nelvspeaker/inc -IC:/Users/Administrator/Desktop/cardface2/nelvcarnotify -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtMultimedia -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtGui -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtSql -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtCore setipdialog.h -o release\moc_setipdialog.cpp
+if errorlevel 1 goto VCEnd
+endlocal</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC setipdialog.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_setipdialog.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setipdialog.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+if errorlevel 1 goto VCEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_MULTIMEDIA_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/mkspecs/win32-msvc2013 -IC:/Users/Administrator/Desktop/cardface2/CardFace -IC:/Users/Administrator/Desktop/cardface2/facedata/inc -IC:/Users/Administrator/Desktop/cardface2/facedata/src -IC:/Users/Administrator/Desktop/cardface2/netdatamgr/inc -IC:/Users/Administrator/Desktop/cardface2/netdatamgr/src -IC:/Users/Administrator/Desktop/cardface2/hkcapsdk/inc -IC:/Users/Administrator/Desktop/cardface2/hkcapsdk/src -IC:/Users/Administrator/Desktop/cardface2/hksdkvc -IC:/Users/Administrator/Desktop/cardface2/public/include/hk -IC:/Users/Administrator/Desktop/cardface2/nelvspeaker/inc -IC:/Users/Administrator/Desktop/cardface2/nelvcarnotify -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtMultimedia -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtGui -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtSql -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.5.1/5.5/msvc2013_64/include/QtCore setipdialog.h -o debug\moc_setipdialog.cpp
+if errorlevel 1 goto VCEnd
+endlocal</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC setipdialog.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_setipdialog.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\moc_alldata.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_alldata.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_infdialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_infdialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_logindialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_logindialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_searchdialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_searchdialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_setipdialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_setipdialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\qrc_res.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\qrc_res.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="ui_alldata.h" />
+    <ClInclude Include="ui_infdialog.h" />
+    <ClInclude Include="ui_logindialog.h" />
+    <ClInclude Include="ui_mainwindow.h" />
+    <ClInclude Include="ui_searchdialog.h" />
+    <ClInclude Include="ui_setipdialog.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ts\qtcn.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="alldata.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">alldata.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+if errorlevel 1 goto VCEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013_64\bin\uic.exe alldata.ui -o ui_alldata.h
+if errorlevel 1 goto VCEnd
+endlocal</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UIC alldata.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ui_alldata.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">alldata.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+if errorlevel 1 goto VCEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013_64\bin\uic.exe alldata.ui -o ui_alldata.h
+if errorlevel 1 goto VCEnd
+endlocal</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UIC alldata.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ui_alldata.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="infdialog.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">infdialog.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+if errorlevel 1 goto VCEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013_64\bin\uic.exe infdialog.ui -o ui_infdialog.h
+if errorlevel 1 goto VCEnd
+endlocal</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UIC infdialog.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ui_infdialog.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">infdialog.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+if errorlevel 1 goto VCEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013_64\bin\uic.exe infdialog.ui -o ui_infdialog.h
+if errorlevel 1 goto VCEnd
+endlocal</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UIC infdialog.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ui_infdialog.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="logindialog.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">logindialog.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+if errorlevel 1 goto VCEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013_64\bin\uic.exe logindialog.ui -o ui_logindialog.h
+if errorlevel 1 goto VCEnd
+endlocal</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UIC logindialog.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ui_logindialog.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">logindialog.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+if errorlevel 1 goto VCEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013_64\bin\uic.exe logindialog.ui -o ui_logindialog.h
+if errorlevel 1 goto VCEnd
+endlocal</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UIC logindialog.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ui_logindialog.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mainwindow.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+if errorlevel 1 goto VCEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013_64\bin\uic.exe mainwindow.ui -o ui_mainwindow.h
+if errorlevel 1 goto VCEnd
+endlocal</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UIC mainwindow.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ui_mainwindow.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mainwindow.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+if errorlevel 1 goto VCEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013_64\bin\uic.exe mainwindow.ui -o ui_mainwindow.h
+if errorlevel 1 goto VCEnd
+endlocal</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UIC mainwindow.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ui_mainwindow.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="searchdialog.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">searchdialog.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+if errorlevel 1 goto VCEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013_64\bin\uic.exe searchdialog.ui -o ui_searchdialog.h
+if errorlevel 1 goto VCEnd
+endlocal</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UIC searchdialog.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ui_searchdialog.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">searchdialog.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+if errorlevel 1 goto VCEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013_64\bin\uic.exe searchdialog.ui -o ui_searchdialog.h
+if errorlevel 1 goto VCEnd
+endlocal</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UIC searchdialog.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ui_searchdialog.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="setipdialog.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setipdialog.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+if errorlevel 1 goto VCEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013_64\bin\uic.exe setipdialog.ui -o ui_setipdialog.h
+if errorlevel 1 goto VCEnd
+endlocal</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UIC setipdialog.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ui_setipdialog.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setipdialog.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+if errorlevel 1 goto VCEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013_64\bin\uic.exe setipdialog.ui -o ui_setipdialog.h
+if errorlevel 1 goto VCEnd
+endlocal</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UIC setipdialog.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ui_setipdialog.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\%%9DBRSVC5RJ%5UGO3Z0JFP.png" />
+    <None Include="res\GreenLight.png" />
+    <None Include="res\RedLight.png" />
+    <None Include="res\e66e95613559aeb69d31fc8941624a98_4ec2d5628535e5dd8efd8d6974c6a7efcf1b62b6.jpg" />
+    <CustomBuild Include="res.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">res.qrc;res\%%9DBRSVC5RJ%5UGO3Z0JFP.png;res\safe.ico;res\white.qss;res\RedLight.png;res\safe.png;res\GreenLight.png;res\e66e95613559aeb69d31fc8941624a98_4ec2d5628535e5dd8efd8d6974c6a7efcf1b62b6.jpg;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+if errorlevel 1 goto VCEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013_64\bin\rcc.exe -name res res.qrc -o release\qrc_res.cpp
+if errorlevel 1 goto VCEnd
+endlocal</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RCC res.qrc</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\qrc_res.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">res.qrc;res\%%9DBRSVC5RJ%5UGO3Z0JFP.png;res\safe.ico;res\white.qss;res\RedLight.png;res\safe.png;res\GreenLight.png;res\e66e95613559aeb69d31fc8941624a98_4ec2d5628535e5dd8efd8d6974c6a7efcf1b62b6.jpg;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+if errorlevel 1 goto VCEnd
+C:\Qt\Qt5.5.1\5.5\msvc2013_64\bin\rcc.exe -name res res.qrc -o debug\qrc_res.cpp
+if errorlevel 1 goto VCEnd
+endlocal</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">RCC res.qrc</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\qrc_res.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="res\safe.ico" />
+    <None Include="res\safe.png" />
+    <None Include="res\white.qss" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\Administrator\Desktop\cardface2\CardFace\CardFace_resource.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ResourceCompile>
+    <ResourceCompile Include="C:\Users\Administrator\Desktop\cardface2\CardFace\CardFaced_resource.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ResourceCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

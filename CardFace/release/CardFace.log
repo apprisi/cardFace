@@ -1,0 +1,47 @@
+﻿生成启动时间为 2017/7/20 11:46:15。
+     1>项目“C:\Users\Administrator\Desktop\cardface2\CardFace\CardFace.vcxproj”在节点 2 上(Build 个目标)。
+     1>CustomBuild:
+         UIC mainwindow.ui
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I. /I..\facedata\inc /I..\facedata\src /I..\netdatamgr\inc /I..\netdatamgr\src /I..\hkcapsdk\inc /I..\hkcapsdk\src /I..\hksdkvc /I..\public\include\hk /I..\nelvspeaker\inc /I..\nelvcarnotify /IC:\Qt\Qt5.5.1\5.5\msvc2013_64\include /IC:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtMultimedia /IC:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtWidgets /IC:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtGui /IC:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtANGLE /IC:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtSql /IC:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtNetwork /IC:\Qt\Qt5.5.1\5.5\msvc2013_64\include\QtCore /Irelease /I. /I"C:\Qt\Qt5.5.1\5.5\msvc2013_64\mkspecs\win32-msvc2013" /nologo /W3 /WX- /O2 /D _WINDOWS /D UNICODE /D WIN32 /D WIN64 /D QT_NO_DEBUG /D QT_MULTIMEDIA_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_SQL_LIB /D QT_NETWORK_LIB /D QT_CORE_LIB /D NDEBUG /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"release\\" /Gd /TP /errorReport:prompt -Zc:strictStrings -w34100 -w34189 -w44996 mainwindow.cpp
+         mainwindow.cpp
+     1>mainwindow.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\users\administrator\desktop\cardface2\cardface\mainwindow.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\users\administrator\desktop\cardface2\cardface\infdialog.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\users\administrator\desktop\cardface2\cardface\alldata.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\users\administrator\desktop\cardface2\cardface\setipdialog.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\users\administrator\desktop\cardface2\cardface\logindialog.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>..\public\include\hk\DecodeCardSdk.h(239): warning C4005: “SERIAL_NUMBER_LENGTH”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\um\winioctl.h(3929) : 参见“SERIAL_NUMBER_LENGTH”的前一个定义
+     1>mainwindow.cpp(802): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>mainwindow.cpp(1591): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>mainwindow.cpp(2808): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>mainwindow.cpp(2809): warning C4100: “type”: 未引用的形参
+     1>mainwindow.cpp(2887): warning C4100: “event”: 未引用的形参
+     1>mainwindow.cpp(3249): warning C4309: “初始化”: 截断常量值
+     1>mainwindow.cpp(3289): warning C4309: “初始化”: 截断常量值
+     1>mainwindow.cpp(3303): warning C4309: “初始化”: 截断常量值
+     1>mainwindow.cpp(3317): warning C4309: “初始化”: 截断常量值
+     1>mainwindow.cpp(3790): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"..\bin64\\CardFace.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib /LIBPATH:C:/Qt/Qt5.5.1/5.5/msvc2013_64/lib /LIBPATH:..\bin64 C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\qtmain.lib shell32.lib C:/Qt/Qt5.5.1/5.5/msvc2013_64/lib\Qt5Core.lib hkcapsdk.lib facedata.lib nelvcarnotify.lib netdatamgr.lib hksdkvc.lib nelvspeaker.lib dogauthority.lib C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Multimedia.lib C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Widgets.lib C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Gui.lib C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Sql.lib C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Network.lib C:\Qt\Qt5.5.1\5.5\msvc2013_64\lib\Qt5Core.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"..\bin64\CardFace.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X64 "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" release\CardFace_resource.res
+         release\alldata.obj
+         release\infdialog.obj
+         release\logindialog.obj
+         release\main.obj
+         release\mainwindow.obj
+         release\searchdialog.obj
+         release\setipdialog.obj
+         release\moc_alldata.obj
+         release\moc_infdialog.obj
+         release\moc_logindialog.obj
+         release\moc_mainwindow.obj
+         release\moc_searchdialog.obj
+         release\moc_setipdialog.obj
+         release\qrc_res.obj
+         CardFace.vcxproj -> C:\Users\Administrator\Desktop\cardface2\CardFace\..\bin64\CardFace.exe
+     1>已完成生成项目“C:\Users\Administrator\Desktop\cardface2\CardFace\CardFace.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:14.49

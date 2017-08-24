@@ -1,0 +1,30 @@
+<RCC>
+    <qresource prefix="/images">
+        <file alias="safe">res/safe.png</file>
+        <file alias="green1">res/GreenLight.png</file>
+        <file alias="novideo">res/%%9DBRSVC5RJ%5UGO3Z0JFP.png</file>
+        <file alias="f1">res/e66e95613559aeb69d31fc8941624a98_4ec2d5628535e5dd8efd8d6974c6a7efcf1b62b6.jpg</file>
+        <file alias="whiteqss">res/white.qss</file>
+        <file alias="red1">res/RedLight.png</file>
+        <file alias="safei">res/safe.ico</file>
+        <file alias="1">res/bgcolor (3).png</file>
+        <file alias="2">res/bgcolor (4).png</file>
+        <file alias="3">res/bgcolor (1).png</file>
+        <file alias="4">res/bgcolor (5).png</file>
+        <file alias="5">res/bgcolor (9).png</file>
+        <file alias="6">res/bgcolor (12).png</file>
+        <file alias="7">res/bgcolor (10).png</file>
+        <file alias="8">res/bgcolor (2).png</file>
+        <file alias="9">res/bgcolor (6).png</file>
+        <file alias="10">res/bgcolor (11).png</file>
+        <file alias="11">res/bgcolor (8).png</file>
+        <file alias="12">res/bgcolor (7).png</file>
+        <file alias="13">res/backgroundcolor (13).jpg</file>
+        <file alias="14">res/backgroundcolor (5).jpg</file>
+        <file alias="15">res/backgroundcolor (12).jpg</file>
+        <file alias="16">res/backgroundcolor (11).jpg</file>
+        <file alias="17">res/backgroundcolor (3).jpg</file>
+        <file alias="red">res/rLight.png</file>
+        <file alias="green">res/gLight.png</file>
+    </qresource>
+</RCC>

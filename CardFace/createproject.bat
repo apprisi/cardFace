@@ -1,0 +1,1 @@
+qmake -r -spec win32-msvc2013 -tp vc 
